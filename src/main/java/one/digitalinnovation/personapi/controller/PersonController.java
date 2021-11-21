@@ -23,4 +23,9 @@ public class PersonController {
     public MessageResponseDTO createPerson(@RequestBody Person person) {
         return personService.createPerson(person);
     }
+
+    @GetMapping
+    public String getMes() {
+        return "API TEST";
+    }
 }
